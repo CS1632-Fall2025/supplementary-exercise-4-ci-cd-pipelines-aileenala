@@ -1,7 +1,6 @@
 package edu.pitt.cs;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class RentACatImpl implements RentACat {
@@ -19,13 +18,7 @@ public class RentACatImpl implements RentACat {
 	 */
 
 	public boolean returnCat(int id) {
-		Cat kitty = this.getCat(id);
-		if(kitty.getRented() == true){
-			kitty.returnCat();
-			System.out.println("Welcome back, " + kitty.getName() + "!");
-			return true;
-		}
-		System.out.println(kitty.getName() + " is already here!");
+		// TODO: Fill in
 		return false;
 	}
 
@@ -40,18 +33,8 @@ public class RentACatImpl implements RentACat {
 	 */
 
 	public boolean rentCat(int id) {
-		Cat kitty = this.getCat(id);
-		if(kitty != null){
-			if(kitty.getRented() == false){
-				kitty.rentCat();
-				System.out.println(kitty.getName() + " has been rented.");
-				return true;
-			}
-			System.out.println("Sorry, " + kitty.getName() + " is not here!");
-		}
-		
+		// TODO: Fill in
 		return false;
-
 	}
 
 	/**
@@ -64,14 +47,8 @@ public class RentACatImpl implements RentACat {
 	 */
 
 	public boolean renameCat(int id, String name) {
-		Cat kitty = this.getCat(id);
-		if(kitty != null){
-			kitty.renameCat(name);
-			return true;
-		}
-		else{
-			return false;
-		}
+		// TODO: Fill in
+		return false;
 	}
 
 	/**
@@ -85,22 +62,8 @@ public class RentACatImpl implements RentACat {
 	 */
 
 	public String listCats() {
-		String catList = "";
-		if(this.cats != null && cats.size() != 0){
-			Iterator catIterator = this.cats.iterator();
-
-			while(catIterator.hasNext()){
-				Cat kitty = (Cat)catIterator.next();
-				if(kitty.getRented() == false){
-					catList = catList + kitty.toString();
-					catList = catList + "\n";
-				}
-			}
-			return catList;
-		}
-		else{
-			return "";
-		}
+		// TODO: Fill in
+		return "WRITE CODE FOR THIS";
 	}
 
 	/**

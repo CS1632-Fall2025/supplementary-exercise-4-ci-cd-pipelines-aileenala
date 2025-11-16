@@ -22,8 +22,6 @@ public class CatUnitTest {
 	 */
 
 	Cat c; // cat object
-	
-	RentACat r;
 
 	@Before
 	public void setUp() throws Exception {
@@ -33,9 +31,7 @@ public class CatUnitTest {
 		// Passing InstanceType.IMPL as the first parameter will create a real cat using your CatImpl implementation.
 		// Passing InstanceType.MOCK as the first parameter will create a mock cat using Mockito.
 		// Which type is the correct choice for this unit test?  I'll leave it up to you.  The answer is in the Unit Testing Part 2 lecture. :)
-		c = Cat.createInstance(InstanceType.IMPL, 1, "Jennyanydots");
-		//c = Cat.createInstance(InstanceType.BUGGY, 1, "Jennyanydots");
-
+		// TODO: Fill in
 	}
 
 	@After
@@ -56,7 +52,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testGetId() {
-		assertEquals(1, c.getId());
+		// TODO: Fill in
 	}
 
 	/**
@@ -70,7 +66,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testGetName() {
-		assertEquals("Jennyanydots", c.getName());
+		// TODO: Fill in
 	}
 
 	/**
@@ -85,7 +81,6 @@ public class CatUnitTest {
 	@Test
 	public void testGetRented() {
 		// TODO: Fill in
-		assertEquals(false, c.getRented());
 	}
 
 	/**
@@ -99,7 +94,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testToString() {
-		assertEquals("ID 1. Jennyanydots", c.toString());
+		// TODO: Fill in
 	}
 
 	/**
@@ -114,8 +109,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testRentCat() {
-		c.rentCat();
-		assertEquals(true, c.getRented());
+		// TODO: Fill in
 	}
 
 	/**
@@ -131,8 +125,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testReturnCat() {
-		c.returnCat();
-		assertEquals(false, c.getRented());
+		// TODO: Fill in
 	}
 
 	/**
@@ -147,9 +140,7 @@ public class CatUnitTest {
 	 */
 	@Test
 	public void testRenameCat() {
-		c.renameCat("Garfield");
-		assertEquals("Garfield", c.getName());
-		assertEquals("ID 1. Garfield", c.toString());
+		// TODO: Fill in
 	}
 
 }
